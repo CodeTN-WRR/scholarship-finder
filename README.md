@@ -1,2 +1,0 @@
-# scholarship-finder
-Yo
