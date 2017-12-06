@@ -9,10 +9,10 @@ use Slim\Http\Response;
     
 $app->get('/', function (Request $request, Response $response, array $args) {
    
-    
     $this->logger->info("Slim-Skeleton '/' route");
           
     return $this->renderer->render($response, 'index.phtml', $args);
+    
 });
 
 $app->post('/', function(Request $request, Response $response, array $args){
@@ -28,49 +28,49 @@ $app->get('/login', function (Request $request, Response $response, array $args)
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'login.phtml', $args);
+    return $this->renderer->render($response, 'login.html', $args);
 });
 
 $app->get('/creators', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'about_us.phtml', $args);
+    return $this->renderer->render($response, 'creators.html', $args);
 });
 
 $app->get('/scholarships', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'search.phtml', $args);
+    return $this->renderer->render($response, 'scholarships.html', $args);
 });
 
 $app->get('/resources', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'resources.phtml', $args);
+    return $this->renderer->render($response, 'resources.html', $args);
 });
 
 $app->get('/resources/tips', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'tips.phtml', $args);
+    return $this->renderer->render($response, 'tips.html', $args);
 });
 
 $app->get('/profile', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'profile.phtml', $args);
+    return $this->renderer->render($response, 'profile.html', $args);
 });
 
 $app->get('/profile/saved', function (Request $request, Response $response, array $args) {
     
     $this->logger->info("Slim-Skeleton '/' route");
 
-    return $this->renderer->render($response, 'saved.phtml', $args);
+    return $this->renderer->render($response, 'saved.html', $args);
 });
 
 $container['notFoundHandler'] = function ($c) {
