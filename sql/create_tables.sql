@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2017 at 09:04 PM
+-- Generation Time: Dec 13, 2017 at 09:20 PM
 -- Server version: 5.5.57-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.22
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `Scholarship`
 --
+CREATE DATABASE IF NOT EXISTS `Scholarship` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `Scholarship`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `scholarships`
 --
 
+DROP TABLE IF EXISTS `scholarships`;
 CREATE TABLE IF NOT EXISTS `scholarships` (
   `Deadline` date DEFAULT NULL,
   `Schools` varchar(255) DEFAULT NULL,
