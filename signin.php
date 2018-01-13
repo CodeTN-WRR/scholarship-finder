@@ -1,7 +1,8 @@
 <?php /* This page contains all the necessary Javascript and CSS for signing in through Google and using the sign in button.
 To include it, add the following PHP (when enclosed in the PHP brackets and in a .php file): "require 'signin.php' ".
 To implement the button, make a div with the id "signinbutton".
-"header.php" must be included at the beginning of the file that this one is included in. */ ?>
+"header.php" must be included at the beginning of the file that this one is included in.
+Style information and branding guidelines for the button are found here: https://developers.google.com/identity/sign-in/web/build-button. */ ?>
 
 <script src="https://apis.google.com/js/api.js?onload=beginLoad" async defer></script>
 <script>
@@ -37,13 +38,6 @@ To implement the button, make a div with the id "signinbutton".
             window.location.href = "/signinredirect.php";
         }
     }
-    
-    //I need to check if signed in and find the expiration date of the token; access vs refresh tokens?
-    //access tokens are refreshed
-    //things like expiration date and revoked access could be checked in php when page is loaded, although that is maybe inefficient
-    //maintain session; server needs to control whether you are logged in or not
-    //style the Google sign-in button and get sign-in status from server (style- https://developers.google.com/identity/branding-guidelines)
-    //how to ensure the user is still signed in when the PHP Session has expired but they are still logged in with Google? How to see if the ID token or access token is recent?
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
