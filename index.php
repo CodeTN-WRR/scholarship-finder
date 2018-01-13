@@ -1,9 +1,10 @@
- <!DOCTYPE html>
+<?php require "header.php"; ?>
+<!DOCTYPE html>
 <html lang="en">
   
 </DOCTYPE>
     <head>
-<body>
+      <?php require "signin.php" ?>
   <style>
     h1 {text-align: center; padding: 60px;}
     
@@ -28,6 +29,7 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
+            <div id="signinbutton">Sign in</div>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
