@@ -59,14 +59,14 @@ To implement the button, make a div with the id "signinbutton".
         white-space: nowrap;
         cursor: pointer;
     }
-    #signinbutton:first-child {
-        background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    #signinbutton :first-child {
+        background: url('https://developers.google.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
         display: inline-block;
         vertical-align: middle;
         width: 42px;
         height: 42px;
     }
-    #signinbutton:nth-child(2) {
+    #signinbutton :nth-child(2) {
         display: inline-block;
         vertical-align: middle;
         padding-left: 42px;
